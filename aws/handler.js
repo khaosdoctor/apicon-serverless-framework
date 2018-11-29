@@ -9,10 +9,10 @@ function fact (number) {
 }
 
 module.exports.factorial = (event, context, callback) => {
-  
+
   const response = {
     statusCode: 200,
-      body: JSON.stringify({
+    body: JSON.stringify({
           answer: fact(event.pathParameters.number)
     })
   }
