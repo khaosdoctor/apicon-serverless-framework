@@ -6,7 +6,7 @@
 
 This is a simple example boilerplate used to demonstrate how we can deploy a serverless function to AWS Lambda in less than 3 minutes.
 
-This talk was presented on [APICon Conference](http://apicon.com.br) on March 23rd 2018.
+This talk was first presented on [APICon Conference](http://apicon.com.br) on March 23rd 2018. And has been updated and improved since then.
 
 This function is simply a factorial API.
 
@@ -16,6 +16,13 @@ This function is simply a factorial API.
 - `handler.js`: Base Javascript file to be read by AWS Lambda as function entrypoint
 
 ## Running locally
+
+You're gonna need Node.js at version 10, if you have NVM installed just issue `nvm use` inside the folder you want to run and it'll change the current
+version to 10. 
+
+After that install all packages using `npm i` then issue `npm run deploy` to deploy your function.
+
+### If you want to recreate 
 
 Install the [Serverless Framework](https://serverless.com/framework/docs) using `npm i -g serverless` or `yarn global add serverless` and then type
 `sls deploy` inside the project directory root.
